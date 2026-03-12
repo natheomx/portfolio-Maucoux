@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nathéo Maucoux — Portfolio BTS SIO SISR</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ===== TOP BAR ===== -->
+<header class="top-bar">
+    <div class="top-bar-inner">
+        <div class="top-bar-brand">
+            <span class="top-bar-initials">NM</span>
+            <div class="top-bar-text">
+                <span class="top-bar-name">Nathéo Maucoux</span>
+                <span class="top-bar-subtitle">BTS SIO · Option SISR · Lycée Suzanne Valadon</span>
+            </div>
+        </div>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Ouvrir le menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+
+<div class="main-container">
+
+    <!-- ===== SIDEBAR ===== -->
+    <nav class="sidebar" id="sidebar">
+        <div class="profile">
+            <div class="profile-img">
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <h2>Nathéo Maucoux</h2>
+            <p class="profile-tagline">Technicien Systèmes &amp; Réseaux</p>
+            <div class="profile-tags">
+                <span>SISR</span>
+                <span>2ème année</span>
+                <span>Limoges</span>
+            </div>
+        </div>
+        <ul>
+            <li><a href="#apropos"><i class="fa-solid fa-user-tag"></i> À Propos</a></li>
+            <li><a href="#experience"><i class="fa-solid fa-briefcase"></i> Expérience</a></li>
+            <li><a href="#competences"><i class="fa-solid fa-star"></i> Compétences</a></li>
+            <li><a href="#projets"><i class="fa-solid fa-folder-open"></i> Projets</a></li>
+            <li><a href="#tableau"><i class="fa-solid fa-table-cells"></i> Tableau E4/E5</a></li>
+            <li><a href="#veille"><i class="fa-solid fa-rss"></i> Veille</a></li>
+            <li><a href="#cv"><i class="fa-solid fa-file-pdf"></i> Mon CV</a></li>
+            <li><a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+        </ul>
+        <div class="sidebar-footer">
+            <a href="mailto:natheo.mx@gmail.com" class="sidebar-mail-btn">
+                <i class="fa-solid fa-paper-plane"></i> natheo.mx@gmail.com
+            </a>
+        </div>
+    </nav>
+
+    <!-- ===== CONTENU ===== -->
+    <main class="content">
+
+        <!-- ======== À PROPOS ======== -->
+        <section id="apropos">
+            <h2>À Propos</h2>
+            <p>Actuellement en deuxième année de BTS SIO au Lycée Suzanne Valadon à Limoges, je me passionne pour l'informatique et les réseaux. J'ai obtenu mon Baccalauréat général avec les spécialités NSI et SES.</p>
+            <br>
+            <h3><i class="fa-solid fa-graduation-cap"></i> Le BTS SIO en deux options</h3>
+            <p>Le BTS Services Informatiques aux Organisations propose deux spécialités :</p>
+            <div class="sio-options-container">
+                <div class="option-card">
+                    <div class="icon-circle"><i class="fa-solid fa-code"></i></div>
+                    <h4>Option SLAM</h4>
+                    <span class="subtitle">Solutions Logicielles &amp; Applications Métiers</span>
+                    <hr>
+                    <p>Formation orientée vers le <strong>développement</strong> : conception de logiciels, sites web, applications mobiles et gestion de bases de données.</p>
+                </div>
+                <div class="option-card sisr-highlight">
+                    <div class="badge-card">Mon Choix</div>
+                    <div class="icon-circle"><i class="fa-solid fa-network-wired"></i></div>
+                    <h4>Option SISR</h4>
+                    <span class="subtitle">Solutions d'Infrastructure, Systèmes &amp; Réseaux</span>
+                    <hr>
+                    <p>Formation orientée vers l'<strong>administration</strong> : installation de serveurs, cybersécurité, virtualisation et maintenance du parc informatique.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======== EXPÉRIENCES ======== -->
+        <section id="experience">
+            <h2>Expériences Professionnelles</h2>
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <span class="date">5 Janvier 2026 – 13 Février 2026</span>
+                    <h3>Technicien Système &amp; Réseau <span class="stage-tag">Stage</span></h3>
+                    <div class="company-card">
+                        <div class="company-logo"><img src="naval_group.png" alt="Logo Naval Group"></div>
+                        <div class="company-info">
+                            <h4><i class="fa-solid fa-ship"></i> Naval Group</h4>
+                            <p class="location"><i class="fa-solid fa-location-dot"></i> Ruelle-sur-Touvre (16)</p>
+                            <p class="desc">Leader européen du naval de défense — conception et maintenance de sous-marins et navires de combat.</p>
+                            <a href="https://www.naval-group.com/" target="_blank" class="company-link"><i class="fa-solid fa-link"></i> Site web</a>
+                        </div>
+                    </div>
+                    <p style="margin-top:15px;">Stage de deuxième année de BTS SIO au sein de la Direction des Systèmes d'Information, dans un environnement industriel hautement sécurisé.</p>
+                    <ul class="mission-list">
+                        <li><strong>Administration système :</strong> Gestion et supervision du parc de serveurs Windows Server dans un environnement Active Directory multi-sites.</li>
+                        <li><strong>Sécurité réseau :</strong> Participation à l'audit et à la mise à jour des règles de pare-feu, application des politiques de sécurité internes.</li>
+                        <li><strong>Support N2 :</strong> Traitement des tickets incidents et requêtes utilisateurs via l'outil ITSM, résolution de pannes matérielles et logicielles.</li>
+                        <li><strong>Documentation :</strong> Rédaction de procédures techniques et mise à jour de la documentation d'infrastructure.</li>
+                    </ul>
+                    <p class="mission-note"><i class="fa-solid fa-circle-info"></i> Contenu à compléter/adapter selon les missions réelles effectuées.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="date">26 Mai 2025 – 26 Juin 2025</span>
+                    <h3>Technicien Système &amp; Réseau <span class="stage-tag">Stage</span></h3>
+                    <div class="company-card">
+                        <div class="company-logo"><img src="cci.jfif" alt="Logo CCI Indre"></div>
+                        <div class="company-info">
+                            <h4><i class="fa-solid fa-building"></i> CCI de l'Indre</h4>
+                            <p class="location"><i class="fa-solid fa-location-dot"></i> 24 Place Gambetta, 36000 Châteauroux</p>
+                            <p class="desc">Établissement public accompagnant les entreprises et le développement économique local.</p>
+                            <a href="https://www.indre.cci.fr" target="_blank" class="company-link"><i class="fa-solid fa-link"></i> Site web</a>
+                        </div>
+                    </div>
+                    <p style="margin-top:15px;">Stage de première année axé sur la refonte complète d'infrastructure et le support utilisateur.</p>
+                    <ul class="mission-list">
+                        <li><strong>Infrastructure Serveur :</strong> Remise en service complète d'une baie informatique (Serveurs Dell PowerEdge, Switchs, Onduleur, KVM).</li>
+                        <li><strong>Virtualisation :</strong> Installation et configuration d'hyperviseurs <strong>VMware ESXi</strong> sur serveurs physiques.</li>
+                        <li><strong>Réseau &amp; Câblage :</strong> Câblage complet de salles de formation (remplacement CAT5 par <strong>CAT6</strong>), brassage de baie et installation de téléphones IP (PoE).</li>
+                        <li><strong>Déploiement :</strong> Masterisation et déploiement de 15 postes sous <strong>Windows 11</strong>, mise à jour BIOS et extension mémoire RAM.</li>
+                    </ul>
+                    <div style="margin-top:20px;">
+                        <a href="rapport_stage.pdf" target="_blank" class="btn"><i class="fa-solid fa-file-pdf"></i> Lire le Rapport de Stage</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ======== COMPÉTENCES ======== -->
+        <section id="competences">
+            <h2>Compétences &amp; Certifications</h2>
+            <p class="section-intro">Niveaux estimés en fonction de la pratique en cours de formation et en stage.</p>
+
+            <div class="skills-container">
+
+                <div class="skills-block">
+                    <h3 class="skills-block-title"><i class="fa-solid fa-server"></i> Systèmes &amp; Réseaux</h3>
+
+                    <div class="skill-row">
+                        <div class="skill-info"><i class="fa-brands fa-linux skill-mini linux-color"></i><span>Linux / Debian</span></div>
+                        <div class="skill-bar-wrap">
+                            <div class="skill-bar"><div class="skill-bar-fill" style="width:75%"></div></div>
+                            <span class="skill-level-label">Intermédiaire</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-row">
+                        <div class="skill-info"><i class="fa-solid fa-network-wired skill-mini cisco-color"></i><span>Cisco / Réseau (VLAN, ACL)</span></div>
+                        <div class="skill-bar-wrap">
+                            <div class="skill-bar"><div class="skill-bar-fill" style="width:65%"></div></div>
+                            <span class="skill-level-label">Intermédiaire</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-row">
+                        <div class="skill-info"><i class="fa-brands fa-windows skill-mini ad-color"></i><span>Active Directory (GPO, Users)</span></div>
+                        <div class="skill-bar-wrap">
+                            <div class="skill-bar"><div class="skill-bar-fill" style="width:70%"></div></div>
+                            <span class="skill-level-label">Intermédiaire</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-row">
+                        <div class="skill-info"><i class="fa-solid fa-shield-halved skill-mini"></i><span>Stormshield (Filtrage, NAT)</span></div>
+                        <div class="skill-bar-wrap">
+                            <div class="skill-bar"><div class="skill-bar-fill" style="width:55%"></div></div>
+                            <span class="skill-level-label">Notions avancées</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-row">
+                        <div class="skill-info"><i class="fa-solid fa-chart-line skill-mini"></i><span>Centreon (Supervision)</span></div>
+                        <div class="skill-bar-wrap">
+                            <div class="skill-bar"><div class="skill-bar-fill" style="width:50%"></div></div>
+                            <span class="skill-level-label">Notions avancées</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-row">
+                        <div class="skill-info"><i class="fa-solid fa-cubes skill-mini"></i><span>VMware ESXi (Virtualisation)</span></div>
+                        <div class="skill-bar-wrap">
+                            <div class="skill-bar"><div class="skill-bar-fill" style="width:60%"></div></div>
+                            <span class="skill-level-label">Intermédiaire</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-block">
+                    <h3 class="skills-block-title"><i class="fa-solid fa-code"></i> Web &amp; Développement</h3>
+
+                    <div class="skill-row">
+                        <div class="skill-info"><i class="fa-brands fa-html5 skill-mini html-color"></i><span>HTML</span></div>
+                        <div class="skill-bar-wrap">
+                            <div class="skill-bar"><div class="skill-bar-fill" style="width:80%"></div></div>
+                            <span class="skill-level-label">Avancé</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-row">
+                        <div class="skill-info"><i class="fa-brands fa-css3-alt skill-mini css-color"></i><span>CSS</span></div>
+                        <div class="skill-bar-wrap">
+                            <div class="skill-bar"><div class="skill-bar-fill" style="width:75%"></div></div>
+                            <span class="skill-level-label">Intermédiaire</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-block">
+                    <h3 class="skills-block-title"><i class="fa-solid fa-certificate"></i> Certifications</h3>
+                    <div class="certif-grid">
+                        <div class="certif-card">
+                            <i class="fa-solid fa-certificate pix-color"></i>
+                            <div>
+                                <strong>Certification PIX</strong>
+                                <p>Compétences numériques certifiées</p>
+                            </div>
+                            <span class="certif-badge obtained">Obtenu</span>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ======== PROJETS ======== -->
+        <section id="projets">
+            <h2>Mes Projets</h2>
+            <p>Voici les projets principaux réalisés durant ma formation SISR.</p>
+            <div class="grid-projets">
+
+                <div class="card center-text project-card-large">
+                    <i class="fa-solid fa-building skill-icon project-color"></i>
+                    <h3>Projet M2L</h3>
+                    <p>Maison des Ligues</p><br>
+                    <p>Évolution et sécurisation du réseau d'une entreprise de coworking multisite. Mise en œuvre d'une architecture sécurisée (DMZ, VLANs) avec pares-feux Stormshield et déploiement des services réseau critiques sous Debian (DNS, DHCP, Web).</p>
+                    <br>
+                    <details>
+                        <summary class="btn">Accéder aux documents</summary>
+                        <div class="doc-list">
+                            <div class="doc-item">
+                                <div class="doc-header">
+                                    <div class="doc-title"><i class="fa-solid fa-book"></i> Cahier des Charges</div>
+                                    <div class="doc-actions">
+                                        <label for="doc-m2l-1" class="btn-action btn-view"><i class="fa-solid fa-eye"></i> Voir</label>
+                                        <a href="M2L_Cahier_des_Charges.pdf" download class="btn-action btn-download"><i class="fa-solid fa-download"></i> DL</a>
+                                    </div>
+                                </div>
+                                <input type="checkbox" id="doc-m2l-1" class="toggle-doc">
+                                <div class="doc-viewer-container"><iframe src="M2L_Cahier_des_Charges.pdf#zoom=100"><p>PDF indisponible.</p></iframe></div>
+                            </div>
+                            <div class="doc-item">
+                                <div class="doc-header">
+                                    <div class="doc-title"><i class="fa-solid fa-file-invoice-dollar"></i> Devis Équipements</div>
+                                    <div class="doc-actions">
+                                        <label for="doc-m2l-2" class="btn-action btn-view"><i class="fa-solid fa-eye"></i> Voir</label>
+                                        <a href="M2L_Devis_Equipements.pdf" download class="btn-action btn-download"><i class="fa-solid fa-download"></i> DL</a>
+                                    </div>
+                                </div>
+                                <input type="checkbox" id="doc-m2l-2" class="toggle-doc">
+                                <div class="doc-viewer-container"><iframe src="M2L_Devis_Equipements.pdf#zoom=100"><p>PDF indisponible.</p></iframe></div>
+                            </div>
+                            <div class="doc-item">
+                                <div class="doc-header">
+                                    <div class="doc-title"><i class="fa-solid fa-sitemap"></i> Plan d'Adressage IP</div>
+                                    <div class="doc-actions">
+                                        <label for="doc-m2l-3" class="btn-action btn-view"><i class="fa-solid fa-eye"></i> Voir</label>
+                                        <a href="M2L_Plan_Adressage.pdf" download class="btn-action btn-download"><i class="fa-solid fa-download"></i> DL</a>
+                                    </div>
+                                </div>
+                                <input type="checkbox" id="doc-m2l-3" class="toggle-doc">
+                                <div class="doc-viewer-container"><iframe src="M2L_Plan_Adressage.pdf#zoom=100"><p>PDF indisponible.</p></iframe></div>
+                            </div>
+                            <div class="doc-item">
+                                <div class="doc-header">
+                                    <div class="doc-title"><i class="fa-solid fa-diagram-project"></i> Schéma de Câblage</div>
+                                    <div class="doc-actions">
+                                        <label for="doc-m2l-4" class="btn-action btn-view"><i class="fa-solid fa-eye"></i> Voir</label>
+                                        <a href="M2L_Schema_Cablage.png" download class="btn-action btn-download"><i class="fa-solid fa-download"></i> DL</a>
+                                    </div>
+                                </div>
+                                <input type="checkbox" id="doc-m2l-4" class="toggle-doc">
+                                <div class="doc-viewer-container" style="text-align:center;background:#fff;"><img src="M2L_Schema_Cablage.png" alt="Schéma Câblage" style="max-width:100%;height:auto;padding:10px;"></div>
+                            </div>
+                        </div>
+                    </details>
+                </div>
+
+                <div class="card center-text project-card-large">
+                    <i class="fa-solid fa-server skill-icon project-color"></i>
+                    <h3>Projet CUB</h3>
+                    <p>Infrastructure Multisite &amp; Sécurité</p><br>
+                    <p>Sécurisation et interconnexion du réseau de CUB, une entreprise d'incubation de startups et de coworking. Architecture multisite (Siège/Agences) avec segmentation (DMZ, VLANs) via des pares-feux <strong>Stormshield</strong> et administration des services réseaux sous <strong>Debian</strong>.</p>
+                    <br>
+                    <details>
+                        <summary class="btn">Accéder aux documents</summary>
+                        <div class="doc-list">
+                            <div class="doc-item">
+                                <div class="doc-header">
+                                    <div class="doc-title"><i class="fa-solid fa-network-wired"></i> Architecture Physique</div>
+                                    <div class="doc-actions">
+                                        <label for="doc-cub-1" class="btn-action btn-view"><i class="fa-solid fa-eye"></i> Voir</label>
+                                        <a href="CUB_Schema_Architecture.png" download class="btn-action btn-download"><i class="fa-solid fa-download"></i> DL</a>
+                                    </div>
+                                </div>
+                                <input type="checkbox" id="doc-cub-1" class="toggle-doc">
+                                <div class="doc-viewer-container" style="text-align:center;background:#fff;"><img src="CUB_Schema_Architecture.png" alt="Architecture CUB" style="max-width:100%;height:auto;padding:10px;"></div>
+                            </div>
+                            <div class="doc-item">
+                                <div class="doc-header">
+                                    <div class="doc-title"><i class="fa-solid fa-diagram-project"></i> Schéma Logique</div>
+                                    <div class="doc-actions">
+                                        <label for="doc-cub-logique" class="btn-action btn-view"><i class="fa-solid fa-eye"></i> Voir</label>
+                                        <a href="CUB_Schema_Reseau.png" download class="btn-action btn-download"><i class="fa-solid fa-download"></i> DL</a>
+                                    </div>
+                                </div>
+                                <input type="checkbox" id="doc-cub-logique" class="toggle-doc">
+                                <div class="doc-viewer-container" style="text-align:center;background:#fff;"><img src="CUB_Schema_Reseau.png" alt="Schéma Logique CUB" style="max-width:100%;height:auto;padding:10px;"></div>
+                            </div>
+                            <div class="doc-item">
+                                <div class="doc-header">
+                                    <div class="doc-title"><i class="fa-brands fa-linux"></i> Installation DHCP</div>
+                                    <div class="doc-actions">
+                                        <label for="doc-cub-2" class="btn-action btn-view"><i class="fa-solid fa-eye"></i> Voir</label>
+                                        <a href="dhcp.pdf" download class="btn-action btn-download"><i class="fa-solid fa-download"></i> DL</a>
+                                    </div>
+                                </div>
+                                <input type="checkbox" id="doc-cub-2" class="toggle-doc">
+                                <div class="doc-viewer-container"><iframe src="dhcp.pdf#zoom=100"><p>PDF indisponible.</p></iframe></div>
+                            </div>
+                            <div class="doc-item">
+                                <div class="doc-header">
+                                    <div class="doc-title"><i class="fa-solid fa-share-nodes"></i> Agent Relais DHCP</div>
+                                    <div class="doc-actions">
+                                        <label for="doc-cub-relais" class="btn-action btn-view"><i class="fa-solid fa-eye"></i> Voir</label>
+                                        <a href="CUB_DHCP_AgentRelais_Debian.pdf" download class="btn-action btn-download"><i class="fa-solid fa-download"></i> DL</a>
+                                    </div>
+                                </div>
+                                <input type="checkbox" id="doc-cub-relais" class="toggle-doc">
+                                <div class="doc-viewer-container"><iframe src="CUB_DHCP_AgentRelais_Debian.pdf#zoom=100"><p>PDF indisponible.</p></iframe></div>
+                            </div>
+                            <div class="doc-item">
+                                <div class="doc-header">
+                                    <div class="doc-title"><i class="fa-solid fa-globe"></i> DNS Récursif (Unbound)</div>
+                                    <div class="doc-actions">
+                                        <label for="doc-cub-dns" class="btn-action btn-view"><i class="fa-solid fa-eye"></i> Voir</label>
+                                        <a href="CUB_DNS_Recursif.pdf" download class="btn-action btn-download"><i class="fa-solid fa-download"></i> DL</a>
+                                    </div>
+                                </div>
+                                <input type="checkbox" id="doc-cub-dns" class="toggle-doc">
+                                <div class="doc-viewer-container"><iframe src="CUB_DNS_Recursif.pdf#zoom=100"><p>PDF indisponible.</p></iframe></div>
+                            </div>
+                            <div class="doc-item">
+                                <div class="doc-header">
+                                    <div class="doc-title"><i class="fa-solid fa-globe"></i> DNS Réseau Users (Bind)</div>
+                                    <div class="doc-actions">
+                                        <label for="doc-cub-dns-users" class="btn-action btn-view"><i class="fa-solid fa-eye"></i> Voir</label>
+                                        <a href="CUB_DNS_Reseau_Users.pdf" download class="btn-action btn-download"><i class="fa-solid fa-download"></i> DL</a>
+                                    </div>
+                                </div>
+                                <input type="checkbox" id="doc-cub-dns-users" class="toggle-doc">
+                                <div class="doc-viewer-container"><iframe src="CUB_DNS_Reseau_Users.pdf#zoom=100"><p>PDF indisponible.</p></iframe></div>
+                            </div>
+                            <div class="doc-item">
+                                <div class="doc-header">
+                                    <div class="doc-title"><i class="fa-brands fa-windows"></i> Active Directory</div>
+                                    <div class="doc-actions">
+                                        <label for="doc-cub-3" class="btn-action btn-view"><i class="fa-solid fa-eye"></i> Voir</label>
+                                        <a href="CUB_Active_Directory.pdf" download class="btn-action btn-download"><i class="fa-solid fa-download"></i> DL</a>
+                                    </div>
+                                </div>
+                                <input type="checkbox" id="doc-cub-3" class="toggle-doc">
+                                <div class="doc-viewer-container"><iframe src="CUB_Active_Directory.pdf#zoom=100"><p>PDF indisponible.</p></iframe></div>
+                            </div>
+                            <div class="doc-item">
+                                <div class="doc-header">
+                                    <div class="doc-title"><i class="fa-solid fa-shield-halved"></i> Filtrage &amp; NAT (Stormshield)</div>
+                                    <div class="doc-actions">
+                                        <label for="doc-cub-storm" class="btn-action btn-view"><i class="fa-solid fa-eye"></i> Voir</label>
+                                        <a href="CUB_StormShield_Filtrage_NAT.pdf" download class="btn-action btn-download"><i class="fa-solid fa-download"></i> DL</a>
+                                    </div>
+                                </div>
+                                <input type="checkbox" id="doc-cub-storm" class="toggle-doc">
+                                <div class="doc-viewer-container"><iframe src="CUB_StormShield_Filtrage_NAT.pdf#zoom=100"><p>PDF indisponible.</p></iframe></div>
+                            </div>
+                            <div class="doc-item">
+                                <div class="doc-header">
+                                    <div class="doc-title"><i class="fa-solid fa-chart-line"></i> Supervision Centreon</div>
+                                    <div class="doc-actions">
+                                        <label for="doc-cub-centreon" class="btn-action btn-view"><i class="fa-solid fa-eye"></i> Voir</label>
+                                        <a href="CUB_Centreon.pdf" download class="btn-action btn-download"><i class="fa-solid fa-download"></i> DL</a>
+                                    </div>
+                                </div>
+                                <input type="checkbox" id="doc-cub-centreon" class="toggle-doc">
+                                <div class="doc-viewer-container"><iframe src="CUB_Centreon.pdf#zoom=100"><p>PDF indisponible.</p></iframe></div>
+                            </div>
+                        </div>
+                    </details>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ======== TABLEAU E4/E5 ======== -->
+        <section id="tableau">
+            <h2>Tableau de Synthèse E4 / E5</h2>
+            <p class="section-intro">Ce tableau recense les activités réalisées en lien avec le référentiel du BTS SIO, option SISR.</p>
+            <div class="table-wrapper">
+                <table class="synthese-table">
+                    <thead>
+                        <tr>
+                            <th>Activité / Situation</th>
+                            <th>Contexte</th>
+                            <th>Compétences mobilisées</th>
+                            <th>Période</th>
+                            <th>Épreuve</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Refonte baie informatique</strong></td>
+                            <td>Stage CCI de l'Indre</td>
+                            <td>Installation matérielle, câblage CAT6, brassage</td>
+                            <td>Mai – Juin 2025</td>
+                            <td><span class="epreuve-tag e4">E4</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Déploiement VMware ESXi</strong></td>
+                            <td>Stage CCI de l'Indre</td>
+                            <td>Virtualisation, configuration hyperviseur</td>
+                            <td>Mai – Juin 2025</td>
+                            <td><span class="epreuve-tag e4">E4</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Masterisation Windows 11</strong></td>
+                            <td>Stage CCI de l'Indre</td>
+                            <td>Déploiement postes, administration Windows</td>
+                            <td>Mai – Juin 2025</td>
+                            <td><span class="epreuve-tag e4">E4</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Administration AD / Support N2</strong></td>
+                            <td>Stage Naval Group</td>
+                            <td>Active Directory, ticketing ITSM, sécurité</td>
+                            <td>Jan – Fév 2026</td>
+                            <td><span class="epreuve-tag e4">E4</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Projet M2L – Réseau sécurisé</strong></td>
+                            <td>Projet scolaire (BTS SIO)</td>
+                            <td>VLANs, DMZ, DNS/DHCP Debian, Stormshield</td>
+                            <td>2024 – 2025</td>
+                            <td><span class="epreuve-tag e5">E5</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Projet CUB – Infrastructure multisite</strong></td>
+                            <td>Projet scolaire (BTS SIO)</td>
+                            <td>Active Directory, Stormshield, Centreon, DNS Bind</td>
+                            <td>2025 – 2026</td>
+                            <td><span class="epreuve-tag e5">E5</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Administration Active Directory</strong></td>
+                            <td>Projet CUB</td>
+                            <td>GPO, gestion utilisateurs/groupes, OUs</td>
+                            <td>2025 – 2026</td>
+                            <td><span class="epreuve-tag e5">E5</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Supervision réseau Centreon</strong></td>
+                            <td>Projet CUB</td>
+                            <td>Monitoring, alertes, configuration agents</td>
+                            <td>2025 – 2026</td>
+                            <td><span class="epreuve-tag e5">E5</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- ======== VEILLE ======== -->
+        <section id="veille">
+            <h2>Veille Technologique</h2>
+            <p>La veille technologique est une activité incontournable pour tout administrateur réseau afin d'anticiper les évolutions et maintenir un haut niveau de sécurité.</p>
+            <div class="veille-grid">
+                <div class="veille-card">
+                    <div class="veille-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3>Sécurité &amp; Vulnérabilités</h3>
+                    <p>Suivi des failles critiques via <strong>CVE Mitre</strong> et <strong>CERT-FR</strong>, des alertes ransomware et des correctifs à appliquer en urgence sur les infrastructures.</p>
+                </div>
+                <div class="veille-card">
+                    <div class="veille-icon"><i class="fa-solid fa-server"></i></div>
+                    <h3>Évolutions Techniques</h3>
+                    <p>Suivi des nouveautés serveurs (Windows Server, Linux), virtualisation (VMware, Proxmox), conteneurisation (Docker) et Cloud (Azure, AWS) via <strong>IT-Connect</strong> et <strong>Korben</strong>.</p>
+                </div>
+                <div class="veille-card">
+                    <div class="veille-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <h3>Montée en Compétences</h3>
+                    <p>Exploration de nouveaux outils d'administration réseau, automatisation (Scripts Bash, Ansible) et préparation aux certifications <strong>CCNA</strong> via <strong>Cisco NetAcad</strong>.</p>
+                </div>
+            </div>
+            <h3 style="margin-top:50px;text-align:center;">Mes Sources &amp; Outils de Veille</h3>
+            <div class="outils-box">
+                <div class="outils-grid">
+                    <div class="outil"><i class="fa-solid fa-triangle-exclamation"></i><span>CERT-FR</span></div>
+                    <div class="outil"><i class="fa-solid fa-bug"></i><span>CVE Mitre</span></div>
+                    <div class="outil"><i class="fa-solid fa-newspaper"></i><span>IT-Connect</span></div>
+                    <div class="outil"><i class="fa-solid fa-rss"></i><span>Feedly (Flux RSS)</span></div>
+                    <div class="outil"><i class="fa-solid fa-network-wired"></i><span>Cisco NetAcad</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======== CV ======== -->
+        <section id="cv">
+            <h2>Mon Curriculum Vitae</h2>
+            <p>Vous pouvez consulter mon CV ci-dessous ou le télécharger au format PDF.</p>
+            <br>
+            <div class="cv-buttons">
+                <a href="CV-Nathéo.pdf" download class="btn"><i class="fa-solid fa-download"></i> Télécharger le PDF</a>
+            </div>
+            <br>
+            <div class="pdf-viewer">
+                <iframe src="CV-Nathéo.pdf" width="100%" height="800px" style="border:none;">
+                    <p>Votre navigateur ne peut pas afficher le PDF. <a href="CV-Nathéo.pdf">Cliquez ici pour le télécharger.</a></p>
+                </iframe>
+            </div>
+        </section>
+
+        <!-- ======== CONTACT SÉCURISÉ ======== -->
+        <section id="contact">
+            <h2>Me Contacter</h2>
+            <p class="section-intro">Vous pouvez me joindre via les informations ci-dessous.</p>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div>
+                        <strong>E-mail</strong>
+                        <p><a href="mailto:natheo.mx@gmail.com">natheo.mx@gmail.com</a></p>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <i class="fa-solid fa-phone"></i>
+                    <div>
+                        <strong>Téléphone</strong>
+                        <p><a href="tel:+33642061729">06 42 06 17 29</a></p>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div>
+                        <strong>Localisation</strong>
+                        <p>Limoges, Haute-Vienne (87)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+</div>
+
+<script>
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.sidebar ul li a');
+
+    window.addEventListener('scroll', () => {
+        let current = '';
+        sections.forEach(sec => {
+            const top = window.scrollY;
+            const offset = sec.offsetTop - 160;
+            const height = sec.offsetHeight;
+            if (top >= offset && top < offset + height) current = sec.getAttribute('id');
+        });
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === '#' + current) link.classList.add('active');
+        });
+    });
+
+    // Bouton fermeture projets
+    document.querySelectorAll('.card details').forEach(details => {
+        const card = details.closest('.card');
+        details.addEventListener('toggle', () => {
+            const existing = card.querySelector('.close-project-btn');
+            if (details.open) {
+                if (!existing) {
+                    const btn = document.createElement('button');
+                    btn.className = 'close-project-btn';
+                    btn.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+                    btn.addEventListener('click', () => { details.removeAttribute('open'); });
+                    card.appendChild(btn);
+                }
+            } else {
+                if (existing) existing.remove();
+            }
+        });
+    });
+
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const sidebar = document.getElementById('sidebar');
+
+    hamburgerBtn.addEventListener('click', () => {
+        sidebar.classList.toggle('sidebar-open');
+        hamburgerBtn.classList.toggle('is-active');
+    });
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            sidebar.classList.remove('sidebar-open');
+            hamburgerBtn.classList.remove('is-active');
+        });
+    });
+</script>
+
+</body>
+</html>

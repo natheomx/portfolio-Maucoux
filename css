@@ -1,0 +1,278 @@
+/* --- RESET ET BASE --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth; /* Défilement fluide */
+}
+
+/* Palette de Bleu */
+:root {
+    --dark-blue: #0f172a;    /* Bleu très foncé (Sidebar) */
+    --medium-blue: #1e40af;  /* Bleu roi (Titres/Boutons) */
+    --light-blue: #dbeafe;   /* Bleu très clair (Fond sections) */
+    --accent-blue: #3b82f6;  /* Bleu vif (Survol) */
+    --white: #ffffff;
+    --text-grey: #334155;
+}
+
+body {
+    background-color: var(--white);
+    color: var(--text-grey);
+}
+
+.main-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* --- SIDEBAR (BANDEAU LATÉRAL) --- */
+.sidebar {
+    width: 260px;
+    background-color: var(--dark-blue);
+    color: var(--white);
+    position: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+.sidebar h2 {
+    color: var(--white);
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    background-color: var(--medium-blue);
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    border: 3px solid var(--accent-blue);
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: #94a3b8; /* Gris bleuté */
+    text-decoration: none;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.sidebar ul li a:hover {
+    color: var(--white);
+    background-color: var(--medium-blue);
+    padding-left: 15px; /* Petit effet de mouvement */
+}
+
+/* --- CONTENU PRINCIPAL --- */
+.content {
+    margin-left: 260px; /* Doit être égal à la largeur de la sidebar */
+    flex: 1;
+    padding: 0;
+}
+
+section {
+    padding: 60px 40px;
+    min-height: 100vh; /* Chaque section prend au moins la hauteur de l'écran */
+    border-bottom: 1px solid #e2e8f0;
+}
+
+/* Alternance de couleurs de fond pour les sections */
+section:nth-child(even) {
+    background-color: var(--light-blue);
+}
+
+h1, h2, h3 {
+    color: var(--dark-blue);
+    margin-bottom: 20px;
+}
+
+h1 { font-size: 3rem; }
+h2 { font-size: 2.5rem; border-left: 5px solid var(--accent-blue); padding-left: 15px; }
+
+/* --- ÉLÉMENTS SPÉCIFIQUES --- */
+
+/* Boutons */
+.btn {
+    display: inline-block;
+    background-color: var(--medium-blue);
+    color: var(--white);
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: var(--accent-blue);
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 2px solid var(--medium-blue);
+    color: var(--medium-blue);
+}
+
+.btn-outline:hover {
+    background-color: var(--medium-blue);
+    color: var(--white);
+}
+
+/* Timeline Expérience */
+.timeline {
+    border-left: 3px solid var(--medium-blue);
+    padding-left: 20px;
+    margin-left: 10px;
+}
+
+.timeline-item {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.timeline-item::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-color: var(--accent-blue);
+    border-radius: 50%;
+    position: absolute;
+    left: -29px;
+    top: 5px;
+}
+
+/* Grille Projets */
+.grid-projets {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: var(--white);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    border-top: 4px solid var(--medium-blue);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Liste Veille */
+.veille-list li {
+    margin-bottom: 10px;
+}
+.veille-list a {
+    color: var(--medium-blue);
+    text-decoration: none;
+    font-weight: 500;
+}
+.veille-list a:hover {
+    text-decoration: underline;
+}
+
+/* --- RESPONSIVE (MOBILE) --- */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 10px;
+    }
+
+    .content {
+        margin-left: 0;
+    }
+    
+    .sidebar ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .sidebar ul li {
+        margin: 5px;
+    }
+    
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.8rem; }
+    /* --- CODE PRÉCÉDENT (Garder tout le CSS d'avant) --- */
+/* ... (Colle le CSS de la réponse précédente ici si ce n'est pas déjà fait) ... */
+
+/* --- AJOUTS SPÉCIFIQUES POUR CE CV --- */
+
+/* Style pour la liste propre (Intérêts) */
+.clean-list {
+    list-style: none;
+    margin-top: 10px;
+}
+.clean-list li {
+    margin-bottom: 8px;
+    font-size: 1.05rem;
+}
+
+/* Style pour la boite contact */
+.contact-info p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.contact-info i {
+    color: var(--medium-blue);
+    font-size: 1.5rem;
+}
+
+.contact-info a {
+    color: var(--text-grey);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.contact-info a:hover {
+    color: var(--accent-blue);
+}
+
+/* Ajustement Box Intérêts */
+.interets-box {
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid var(--accent-blue);
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+}

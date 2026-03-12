@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Nathéo MAUCOUX - SISR</title>
+    
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <header class="sidebar">
+        <div class="profile">
+            <h1>Nathéo MAUCOUX</h1>
+            <p>Étudiant BTS SIO - SISR</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#accueil" class="active"><i class="fa-solid fa-house"></i> Accueil</a></li>
+                <li><a href="#propos"><i class="fa-solid fa-user"></i> À Propos</a></li>
+                <li><a href="#competences"><i class="fa-solid fa-code"></i> Compétences</a></li>
+                <li><a href="#experience"><i class="fa-solid fa-briefcase"></i> Expérience</a></li>
+                <li><a href="#projets"><i class="fa-solid fa-folder-open"></i> Projets</a></li>
+                <li><a href="#veille"><i class="fa-solid fa-eye"></i> Veille</a></li>
+                <li><a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+        <div class="social">
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </header>
+
+    <main class="main-content">
+
+        <section id="accueil">
+            <div class="hero">
+                <h1>Bienvenue sur mon Portfolio</h1>
+                <p>Passionné par les réseaux, la cybersécurité et l'administration système.</p>
+                <a href="#projets" class="btn">Voir mes projets</a>
+            </div>
+        </section>
+
+        <section id="propos">
+            <h2>À Propos de moi</h2>
+            <p>Étudiant en BTS Services Informatiques aux Organisations option SISR (Solutions d'Infrastructure, Systèmes et Réseaux). Je me spécialise dans l'administration des serveurs, la virtualisation et la sécurité des réseaux.</p>
+            <br>
+            <a href="cv.pdf" target="_blank" class="btn"><i class="fa-solid fa-file-pdf"></i> Voir mon CV</a>
+        </section>
+
+        <section id="competences">
+            <h2>Mes Compétences</h2>
+            <div class="grid-projets">
+                
+                <div class="card center-text">
+                    <i class="fa-brands fa-windows skill-icon ad-color"></i>
+                    <h3>Active Directory</h3>
+                    <p>Administration, GPO & Utilisateurs</p>
+                </div>
+
+                <div class="card center-text">
+                    <i class="fa-solid fa-network-wired skill-icon cisco-color"></i>
+                    <h3>Cisco / Réseau</h3>
+                    <p>Switching, Routing, VLAN, ACL</p>
+                </div>
+
+                <div class="card center-text">
+                    <i class="fa-brands fa-debian skill-icon debian-color"></i>
+                    <h3>Debian / Linux</h3>
+                    <p>Installation, CLI & Services (DNS/DHCP)</p>
+                </div>
+
+                <div class="card center-text">
+                    <i class="fa-brands fa-html5 skill-icon" style="color:#e34c26;"></i>
+                    <h3>Web</h3>
+                    <p>HTML5, CSS3, Bases de données</p>
+                </div>
+
+                <div class="card center-text">
+                    <i class="fa-solid fa-server skill-icon project-color"></i>
+                    <h3>Virtualisation</h3>
+                    <p>VMware ESXi, Proxmox</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Mon Parcours</h2>
+            <div class="timeline">
+                
+                <div class="timeline-item">
+                    <span class="date">26 Mai 2025 - 26 Juin 2025</span>
+                    <h3>Technicien Système & Réseau (Stage)</h3>
+                    
+                    <div class="company-card">
+                        <div class="company-logo">
+                            <img src="cci.jpg" alt="Logo CCI Indre">
+                        </div>
+                        <div class="company-info">
+                            <h4><i class="fa-solid fa-building"></i> CCI de l'Indre</h4>
+                            <p class="location"><i class="fa-solid fa-location-dot"></i> 24 Place Gambetta, 36000 Châteauroux</p>
+                            <p class="desc">Établissement public accompagnant les entreprises et le développement économique local.</p>
+                            <a href="https://www.indre.cci.fr" target="_blank" class="company-link"><i class="fa-solid fa-link"></i> Site web</a>
+                        </div>
+                    </div>
+
+                    <p style="margin-top: 15px;">Stage de première année de BTS SIO axé sur la refonte d'infrastructure et le support utilisateur.</p>
+                    
+                    <ul style="margin-top: 10px; margin-left: 20px; list-style-type: disc; margin-bottom: 20px;">
+                        <li><strong>Infrastructure Serveur :</strong> Remise en service complète d'une baie informatique (Serveurs Dell PowerEdge, Switchs, Onduleur, KVM).</li>
+                        <li><strong>Virtualisation :</strong> Installation et configuration d'hyperviseurs <strong>VMware ESXi</strong> sur serveurs.</li>
+                        <li><strong>Réseau & Câblage :</strong> Câblage complet de salles de formation (remplacement CAT5 par <strong>CAT6</strong>), brassage de la baie et installation de téléphones IP (PoE).</li>
+                        <li><strong>Maintenance :</strong> Masterisation et déploiement de 15 postes sous <strong>Windows 11</strong>, mise à jour BIOS et ajout de RAM.</li>
+                    </ul>
+
+                    <div class="stage-gallery">
+                        
+                        <div class="gallery-item">
+                            <img src="baie.jfif" alt="Baie informatique câblée">
+                            <div class="caption">
+                                <i class="fa-solid fa-server"></i>
+                                <span>Câblage et brassage de la baie serveur (ESXi, Switchs)</span>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item">
+                            <img src="pc.jfif" alt="Maintenance Unité Centrale">
+                            <div class="caption">
+                                <i class="fa-solid fa-microchip"></i>
+                                <span>Maintenance et upgrade matériel (RAM/Disque)</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="projets">
+            <h2>Mes Projets</h2>
+            <p>Voici les projets principaux réalisés durant ma formation SISR.</p>
+            
+            <div class="grid-projets">
+                
+                <div class="card center-text project-card-large">
+                    <i class="fa-solid fa-building skill-icon project-color"></i>
+                    <h3>Projet M2L</h3>
+                    <p>Maison des Ligues</p>
+                    <br>
+                    <p>Mise en place d'une infrastructure complète pour la gestion des ligues sportives.</p>
+                    <br>
+
+                    <details>
+                        <summary class="btn">Accéder aux documents</summary>
+                        <div class="doc-list">
+                            <div class="doc-item">
+                                <div class="doc-header">
+                                    <div class="doc-title"><i class="fa-solid fa-book"></i> Cahier des Charges</div>
+                                    <div class="doc-actions">
+                                        <label for="doc-m2l-1" class="btn-action btn-view"><i class="fa-solid fa-eye"></i> Voir</label>
+                                        <a href="m2l.pdf" download class="btn-action btn-download"><i class="fa-solid fa-download"></i> DL</a>
+                                    </div>
+                                </div>
+                                <input type="checkbox" id="doc-m2l-1" class="toggle-doc">
+                                <div class="doc-viewer-container">
+                                    <iframe src="m2l.pdf"><p>PDF indisponible.</p></iframe>
+                                </div>
+                            </div>
+                            <div class="doc-item">
+                                <div class="doc-header">
+                                    <div class="doc-title"><i class="fa-solid fa-file-invoice-dollar"></i> Devis Équipements</div>
+                                    <div class="doc-actions">
+                                        <label for="doc-m2l-2" class="btn-action btn-view"><i class="fa-solid fa-eye"></i> Voir</label>
+                                        <a href="M2L_Devis_Equipements.pdf" download class="btn-action btn-download"><i class="fa-solid fa-download"></i> DL</a>
+                                    </div>
+                                </div>
+                                <input type="checkbox" id="doc-m2l-2" class="toggle-doc">
+                                <div class="doc-viewer-container">
+                                    <iframe src="M2L_Devis_Equipements.pdf"><p>PDF indisponible.</p></iframe>
+                                </div>
+                            </div>
+                            <div class="doc-item">
+                                <div class="doc-header">
+                                    <div class="doc-title"><i class="fa-solid fa-sitemap"></i> Plan d'Adressage IP</div>
+                                    <div class="doc-actions">
+                                        <label for="doc-m2l-3" class="btn-action btn-view"><i class="fa-solid fa-eye"></i> Voir</label>
+                                        <a href="M2L_Plan_Adressage.pdf" download class="btn-action btn-download"><i class="fa-solid fa-download"></i> DL</a>
+                                    </div>
+                                </div>
+                                <input type="checkbox" id="doc-m2l-3" class="toggle-doc">
+                                <div class="doc-viewer-container">
+                                    <iframe src="M2L_Plan_Adressage.pdf"><p>PDF indisponible.</p></iframe>
+                                </div>
+                            </div>
+                            <div class="doc-item">
+                                <div class="doc-header">
+                                    <div class="doc-title"><i class="fa-solid fa-diagram-project"></i> Schéma de Câblage</div>
+                                    <div class="doc-actions">
+                                        <label for="doc-m2l-4" class="btn-action btn-view"><i class="fa-solid fa-eye"></i> Voir</label>
+                                        <a href="M2L_Schema_Cablage.png" download class="btn-action btn-download"><i class="fa-solid fa-download"></i> DL</a>
+                                    </div>
+                                </div>
+                                <input type="checkbox" id="doc-m2l-4" class="toggle-doc">
+                                <div class="doc-viewer-container" style="text-align: center; background-color: #fff;">
+                                    <img src="M2L_Schema_Cablage.png" alt="Schéma Câblage" style="max-width: 100%; height: auto; padding: 10px;">
+                                </div>
+                            </div>
+                        </div>
+                    </details>
+                </div>
+
+                <div class="card center-text project-card-large">
+                    <i class="fa-solid fa-server skill-icon project-color"></i>
+                    <h3>Projet CUB</h3>
+                    <p>Infrastructure Multisite & Sécurité</p>
+                    <br>
+                    
+                    <p>
+                        Sécurisation et interconnexion du réseau de CUB, une entreprise d'incubation de startups et de coworking. 
+                        Mise en œuvre d'une architecture multisite (Siège/Agences) avec segmentation (DMZ, VLANs) via des pares-feux <strong>Stormshield</strong> 
+                        et administration des services réseaux sous <strong>Debian</strong>.
+                    </p>
+                    <br>
+
+                    <details>
+                        <summary class="btn">Accéder aux documents</summary>
+                        <div class="doc-list">
+                            <div class="doc-item">
+                                <div class="doc-header">
+                                    <div class="doc-title"><i class="fa-solid fa-network-wired"></i> Architecture Physique</div>
+                                    <div class="doc-actions">
+                                        <label for="doc-cub-1" class="btn-action btn-view"><i class="fa-solid fa-eye"></i> Voir</label>
+                                        <a href="CUB_Schema_Architecture.png" download class="btn-action btn-download"><i class="fa-solid fa-download"></i> DL</a>
+                                    </div>
+                                </div>
+                                <input type="checkbox" id="doc-cub-1" class="toggle-doc">
+                                <div class="doc-viewer-container" style="text-align: center; background-color: #fff;">
+                                    <img src="CUB_Schema_Architecture.png" alt="Architecture CUB" style="max-width: 100%; height: auto; padding: 10px;">
+                                </div>
+                            </div>
+                            <div class="doc-item">
+                                <div class="doc-header">
+                                    <div class="doc-title"><i class="fa-solid fa-diagram-project"></i> Schéma Logique</div>
+                                    <div class="doc-actions">
+                                        <label for="doc-cub-logique" class="btn-action btn-view"><i class="fa-solid fa-eye"></i> Voir</label>
+                                        <a href="CUB_Schema_Reseau.png" download class="btn-action btn-download"><i class="fa-solid fa-download"></i> DL</a>
+                                    </div>
+                                </div>
+                                <input type="checkbox" id="doc-cub-logique" class="toggle-doc">
+                                <div class="doc-viewer-container" style="text-align: center; background-color: #fff;">
+                                    <img src="CUB_Schema_Reseau.png" alt="Schéma Logique CUB" style="max-width: 100%; height: auto; padding: 10px;">
+                                </div>
+                            </div>
+                            <div class="doc-item">
+                                <div class="doc-header">
+                                    <div class="doc-title"><i class="fa-brands fa-linux"></i> Installation DHCP</div>
+                                    <div class="doc-actions">
+                                        <label for="doc-cub-2" class="btn-action btn-view"><i class="fa-solid fa-eye"></i> Voir</label>
+                                        <a href="dhcp.pdf" download class="btn-action btn-download"><i class="fa-solid fa-download"></i> DL</a>
+                                    </div>
+                                </div>
+                                <input type="checkbox" id="doc-cub-2" class="toggle-doc">
+                                <div class="doc-viewer-container">
+                                    <iframe src="dhcp.pdf"><p>PDF indisponible.</p></iframe>
+                                </div>
+                            </div>
+                            <div class="doc-item">
+                                <div class="doc-header">
+                                    <div class="doc-title"><i class="fa-solid fa-share-nodes"></i> Agent Relais DHCP</div>
+                                    <div class="doc-actions">
+                                        <label for="doc-cub-relais" class="btn-action btn-view"><i class="fa-solid fa-eye"></i> Voir</label>
+                                        <a href="CUB_DHCP_AgentRelais_Debian.pdf" download class="btn-action btn-download"><i class="fa-solid fa-download"></i> DL</a>
+                                    </div>
+                                </div>
+                                <input type="checkbox" id="doc-cub-relais" class="toggle-doc">
+                                <div class="doc-viewer-container">
+                                    <iframe src="CUB_DHCP_AgentRelais_Debian.pdf"><p>PDF indisponible.</p></iframe>
+                                </div>
+                            </div>
+                            <div class="doc-item">
+                                <div class="doc-header">
+                                    <div class="doc-title"><i class="fa-solid fa-globe"></i> DNS Récursif (Unbound)</div>
+                                    <div class="doc-actions">
+                                        <label for="doc-cub-dns" class="btn-action btn-view"><i class="fa-solid fa-eye"></i> Voir</label>
+                                        <a href="CUB_DNS_Recursif.pdf" download class="btn-action btn-download"><i class="fa-solid fa-download"></i> DL</a>
+                                    </div>
+                                </div>
+                                <input type="checkbox" id="doc-cub-dns" class="toggle-doc">
+                                <div class="doc-viewer-container">
+                                    <iframe src="CUB_DNS_Recursif.pdf"><p>PDF indisponible.</p></iframe>
+                                </div>
+                            </div>
+                            <div class="doc-item">
+                                <div class="doc-header">
+                                    <div class="doc-title"><i class="fa-solid fa-globe"></i> DNS Réseau Users (Bind)</div>
+                                    <div class="doc-actions">
+                                        <label for="doc-cub-dns-users" class="btn-action btn-view"><i class="fa-solid fa-eye"></i> Voir</label>
+                                        <a href="CUB_DNS_Reseau_Users.pdf" download class="btn-action btn-download"><i class="fa-solid fa-download"></i> DL</a>
+                                    </div>
+                                </div>
+                                <input type="checkbox" id="doc-cub-dns-users" class="toggle-doc">
+                                <div class="doc-viewer-container">
+                                    <iframe src="CUB_DNS_Reseau_Users.pdf"><p>PDF indisponible.</p></iframe>
+                                </div>
+                            </div>
+                            <div class="doc-item">
+                                <div class="doc-header">
+                                    <div class="doc-title"><i class="fa-brands fa-windows"></i> Active Directory</div>
+                                    <div class="doc-actions">
+                                        <label for="doc-cub-3" class="btn-action btn-view"><i class="fa-solid fa-eye"></i> Voir</label>
+                                        <a href="CUB_Active_Directory.pdf" download class="btn-action btn-download"><i class="fa-solid fa-download"></i> DL</a>
+                                    </div>
+                                </div>
+                                <input type="checkbox" id="doc-cub-3" class="toggle-doc">
+                                <div class="doc-viewer-container">
+                                    <iframe src="CUB_Active_Directory.pdf"><p>PDF indisponible.</p></iframe>
+                                </div>
+                            </div>
+                            <div class="doc-item">
+                                <div class="doc-header">
+                                    <div class="doc-title"><i class="fa-solid fa-shield-halved"></i> Filtrage & NAT (Stormshield)</div>
+                                    <div class="doc-actions">
+                                        <label for="doc-cub-storm" class="btn-action btn-view"><i class="fa-solid fa-eye"></i> Voir</label>
+                                        <a href="CUB_StormShield_Filtrage_NAT.pdf" download class="btn-action btn-download"><i class="fa-solid fa-download"></i> DL</a>
+                                    </div>
+                                </div>
+                                <input type="checkbox" id="doc-cub-storm" class="toggle-doc">
+                                <div class="doc-viewer-container">
+                                    <iframe src="CUB_StormShield_Filtrage_NAT.pdf"><p>PDF indisponible.</p></iframe>
+                                </div>
+                            </div>
+                            <div class="doc-item">
+                                <div class="doc-header">
+                                    <div class="doc-title"><i class="fa-solid fa-chart-line"></i> Supervision Centreon</div>
+                                    <div class="doc-actions">
+                                        <label for="doc-cub-centreon" class="btn-action btn-view"><i class="fa-solid fa-eye"></i> Voir</label>
+                                        <a href="CUB_Centreon.pdf" download class="btn-action btn-download"><i class="fa-solid fa-download"></i> DL</a>
+                                    </div>
+                                </div>
+                                <input type="checkbox" id="doc-cub-centreon" class="toggle-doc">
+                                <div class="doc-viewer-container">
+                                    <iframe src="CUB_Centreon.pdf"><p>PDF indisponible.</p></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </details>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="veille">
+            <h2>Veille Technologique</h2>
+            <p>La veille technologique est une activité incontournable pour tout administrateur réseau afin d'anticiper les évolutions et maintenir un haut niveau de sécurité.</p>
+            
+            <div class="veille-grid">
+                <div class="veille-card">
+                    <div class="veille-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3>Sécurité & Vulnérabilités</h3>
+                    <p>Se tenir informé des dernières failles de sécurité (CVE), des attaques (Ransomware) et des correctifs à appliquer d'urgence sur les infrastructures.</p>
+                </div>
+                <div class="veille-card">
+                    <div class="veille-icon"><i class="fa-solid fa-server"></i></div>
+                    <h3>Évolutions Techniques</h3>
+                    <p>Suivre l'évolution des technologies serveurs (Windows Server, Linux), de la virtualisation (VMware, Proxmox) et du Cloud.</p>
+                </div>
+                <div class="veille-card">
+                    <div class="veille-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <h3>Montée en Compétences</h3>
+                    <p>Découvrir de nouveaux outils d'administration et automatiser les tâches (Scripts, Ansible) pour gagner en efficacité.</p>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 50px; text-align: center;">Mes Outils de Veille</h3>
+            <div class="outils-box">
+                <div class="outils-grid">
+                    <div class="outil">
+                        <i class="fa-solid fa-rss"></i>
+                        <span>Feedly (Flux RSS)</span>
+                    </div>
+                    <div class="outil">
+                        <i class="fa-solid fa-envelope-open-text"></i>
+                        <span>Newsletters (ANSSI, CERT)</span>
+                    </div>
+                    <div class="outil">
+                        <i class="fa-solid fa-bell"></i>
+                        <span>Google Alerts</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Me Contacter</h2>
+            <div class="contact-box">
+                <p>N'hésitez pas à me contacter pour toute opportunité ou question.</p>
+                <a href="mailto:ton.email@exemple.com" class="btn">Envoyer un Email</a>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        let sections = document.querySelectorAll('section');
+        let navLinks = document.querySelectorAll('.sidebar ul li a');
+
+        window.onscroll = () => {
+            sections.forEach(sec => {
+                let top = window.scrollY;
+                let offset = sec.offsetTop - 150;
+                let height = sec.offsetHeight;
+                let id = sec.getAttribute('id');
+
+                if(top >= offset && top < offset + height) {
+                    navLinks.forEach(links => {
+                        links.classList.remove('active');
+                        let target = document.querySelector('.sidebar ul li a[href*=' + id + ']');
+                        if (target) {
+                            target.classList.add('active');
+                        }
+                    });
+                }
+            });
+        };
+    </script>
+
+</body>
+</html>
