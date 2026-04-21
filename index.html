@@ -512,31 +512,108 @@
                                 <div class="doc-viewer-container" style="text-align:center;background:#fff;"><img src="M2L_Schema_Cablage.png" alt="Schéma Câblage" style="max-width:100%;height:auto;padding:10px;"></div>
                             </div>
                         </div>
-
-                    <div class="doc-item">
-                        <div class="doc-header">
-                            <div class="doc-title">Installation Serveur Web (Debian)</div>
-                            <div class="doc-actions">
-                                <label for="doc-sys-1" class="btn-action btn-view"><i class="fa-solid fa-eye"></i> Voir</label>
-                                <a href="docs/proc_apache_debian.pdf" download class="btn-action btn-download"><i class="fa-solid fa-download"></i> DL</a>
-                            </div>
-                        </div>
-                        <input type="checkbox" id="doc-sys-1" class="toggle-doc">
-                        <div class="doc-viewer-container"><iframe src="docs/proc_apache_debian.pdf"></iframe></div>
-                    </div>
-
-                    <div class="doc-item">
-                        <div class="doc-header">
-                            <div class="doc-title">Gestion Active Directory & GPO</div>
-                            <div class="doc-actions">
-                                <label for="doc-sys-2" class="btn-action btn-view"><i class="fa-solid fa-eye"></i> Voir</label>
-                                <a href="docs/proc_gpo_windows.pdf" download class="btn-action btn-download"><i class="fa-solid fa-download"></i> DL</a>
-                            </div>
-                        </div>
-                        <input type="checkbox" id="doc-sys-2" class="toggle-doc">
-                        <div class="doc-viewer-container"><iframe src="docs/proc_gpo_windows.pdf"></iframe></div>
-                    </div>
                 </div>
+                <div class="doc-list">
+                            <div class="doc-item">
+                                <div class="doc-header">
+                                    <div class="doc-title"><i class="fa-solid fa-network-wired"></i> Architecture Physique</div>
+                                    <div class="doc-actions">
+                                        <label for="doc-cub-1" class="btn-action btn-view"><i class="fa-solid fa-eye"></i> Voir</label>
+                                        <a href="CUB_Schema_Architecture.png" download class="btn-action btn-download"><i class="fa-solid fa-download"></i> DL</a>
+                                    </div>
+                                </div>
+                                <input type="checkbox" id="doc-cub-1" class="toggle-doc">
+                                <div class="doc-viewer-container" style="text-align:center;background:#fff;"><img src="CUB_Schema_Architecture.png" alt="Architecture CUB" style="max-width:100%;height:auto;padding:10px;"></div>
+                            </div>
+                            <div class="doc-item">
+                                <div class="doc-header">
+                                    <div class="doc-title"><i class="fa-solid fa-diagram-project"></i> Schéma Logique</div>
+                                    <div class="doc-actions">
+                                        <label for="doc-cub-logique" class="btn-action btn-view"><i class="fa-solid fa-eye"></i> Voir</label>
+                                        <a href="CUB_Schema_Reseau.png" download class="btn-action btn-download"><i class="fa-solid fa-download"></i> DL</a>
+                                    </div>
+                                </div>
+                                <input type="checkbox" id="doc-cub-logique" class="toggle-doc">
+                                <div class="doc-viewer-container" style="text-align:center;background:#fff;"><img src="CUB_Schema_Reseau.png" alt="Schéma Logique CUB" style="max-width:100%;height:auto;padding:10px;"></div>
+                            </div>
+                            <div class="doc-item">
+                                <div class="doc-header">
+                                    <div class="doc-title"><i class="fa-brands fa-linux"></i> Installation DHCP</div>
+                                    <div class="doc-actions">
+                                        <label for="doc-cub-2" class="btn-action btn-view"><i class="fa-solid fa-eye"></i> Voir</label>
+                                        <a href="dhcp.pdf" download class="btn-action btn-download"><i class="fa-solid fa-download"></i> DL</a>
+                                    </div>
+                                </div>
+                                <input type="checkbox" id="doc-cub-2" class="toggle-doc">
+                                <div class="doc-viewer-container"><iframe src="dhcp.pdf#zoom=100"><p>PDF indisponible.</p></iframe></div>
+                            </div>
+                            <div class="doc-item">
+                                <div class="doc-header">
+                                    <div class="doc-title"><i class="fa-solid fa-share-nodes"></i> Agent Relais DHCP</div>
+                                    <div class="doc-actions">
+                                        <label for="doc-cub-relais" class="btn-action btn-view"><i class="fa-solid fa-eye"></i> Voir</label>
+                                        <a href="CUB_DHCP_AgentRelais_Debian.pdf" download class="btn-action btn-download"><i class="fa-solid fa-download"></i> DL</a>
+                                    </div>
+                                </div>
+                                <input type="checkbox" id="doc-cub-relais" class="toggle-doc">
+                                <div class="doc-viewer-container"><iframe src="CUB_DHCP_AgentRelais_Debian.pdf#zoom=100"><p>PDF indisponible.</p></iframe></div>
+                            </div>
+                            <div class="doc-item">
+                                <div class="doc-header">
+                                    <div class="doc-title"><i class="fa-solid fa-globe"></i> DNS Récursif (Unbound)</div>
+                                    <div class="doc-actions">
+                                        <label for="doc-cub-dns" class="btn-action btn-view"><i class="fa-solid fa-eye"></i> Voir</label>
+                                        <a href="CUB_DNS_Recursif.pdf" download class="btn-action btn-download"><i class="fa-solid fa-download"></i> DL</a>
+                                    </div>
+                                </div>
+                                <input type="checkbox" id="doc-cub-dns" class="toggle-doc">
+                                <div class="doc-viewer-container"><iframe src="CUB_DNS_Recursif.pdf#zoom=100"><p>PDF indisponible.</p></iframe></div>
+                            </div>
+                            <div class="doc-item">
+                                <div class="doc-header">
+                                    <div class="doc-title"><i class="fa-solid fa-globe"></i> DNS Réseau Users (Bind)</div>
+                                    <div class="doc-actions">
+                                        <label for="doc-cub-dns-users" class="btn-action btn-view"><i class="fa-solid fa-eye"></i> Voir</label>
+                                        <a href="CUB_DNS_Reseau_Users.pdf" download class="btn-action btn-download"><i class="fa-solid fa-download"></i> DL</a>
+                                    </div>
+                                </div>
+                                <input type="checkbox" id="doc-cub-dns-users" class="toggle-doc">
+                                <div class="doc-viewer-container"><iframe src="CUB_DNS_Reseau_Users.pdf#zoom=100"><p>PDF indisponible.</p></iframe></div>
+                            </div>
+                            <div class="doc-item">
+                                <div class="doc-header">
+                                    <div class="doc-title"><i class="fa-brands fa-windows"></i> Active Directory</div>
+                                    <div class="doc-actions">
+                                        <label for="doc-cub-3" class="btn-action btn-view"><i class="fa-solid fa-eye"></i> Voir</label>
+                                        <a href="CUB_Active_Directory.pdf" download class="btn-action btn-download"><i class="fa-solid fa-download"></i> DL</a>
+                                    </div>
+                                </div>
+                                <input type="checkbox" id="doc-cub-3" class="toggle-doc">
+                                <div class="doc-viewer-container"><iframe src="CUB_Active_Directory.pdf#zoom=100"><p>PDF indisponible.</p></iframe></div>
+                            </div>
+                            <div class="doc-item">
+                                <div class="doc-header">
+                                    <div class="doc-title"><i class="fa-solid fa-shield-halved"></i> Filtrage &amp; NAT (Stormshield)</div>
+                                    <div class="doc-actions">
+                                        <label for="doc-cub-storm" class="btn-action btn-view"><i class="fa-solid fa-eye"></i> Voir</label>
+                                        <a href="CUB_StormShield_Filtrage_NAT.pdf" download class="btn-action btn-download"><i class="fa-solid fa-download"></i> DL</a>
+                                    </div>
+                                </div>
+                                <input type="checkbox" id="doc-cub-storm" class="toggle-doc">
+                                <div class="doc-viewer-container"><iframe src="CUB_StormShield_Filtrage_NAT.pdf#zoom=100"><p>PDF indisponible.</p></iframe></div>
+                            </div>
+                            <div class="doc-item">
+                                <div class="doc-header">
+                                    <div class="doc-title"><i class="fa-solid fa-chart-line"></i> Supervision Centreon</div>
+                                    <div class="doc-actions">
+                                        <label for="doc-cub-centreon" class="btn-action btn-view"><i class="fa-solid fa-eye"></i> Voir</label>
+                                        <a href="CUB_Centreon.pdf" download class="btn-action btn-download"><i class="fa-solid fa-download"></i> DL</a>
+                                    </div>
+                                </div>
+                                <input type="checkbox" id="doc-cub-centreon" class="toggle-doc">
+                                <div class="doc-viewer-container"><iframe src="CUB_Centreon.pdf#zoom=100"><p>PDF indisponible.</p></iframe></div>
+                            </div>
+                        </div>
             </details>
         </div>
 
