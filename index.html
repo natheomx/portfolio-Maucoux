@@ -451,35 +451,235 @@
 
         <!-- ======== DOCUMENTATION ======== -->
         <section id="documentation">
-            <h2>Documentation Technique</h2>
-            <p class="section-intro">Retrouvez ici mes procédures et fiches mémos techniques réalisées durant mon parcours.</p>
-            
-            <div class="grid-projets">
-                <div class="card">
-                    <i class="fa-solid fa-terminal skill-icon"></i>
-                    <h3>Procédures Système</h3>
-                    <p>Installation de services sous Debian, configuration de serveurs Web (Apache/Nginx) et durcissement système.</p>
-                    <br>
-                    <a href="chemin_vers_ta_doc_linux.pdf" target="_blank" class="btn"><i class="fa-solid fa-eye"></i> Consulter</a>
-                </div>
+    <h2>Documentation Technique</h2>
+    <p class="section-intro">Retrouvez ici l'ensemble de mes procédures et fiches techniques réseau réalisées sur matériel Cisco.</p>
 
-                <div class="card">
-                    <i class="fa-solid fa-network-wired skill-icon"></i>
-                    <h3>Mémos Réseau</h3>
-                    <p>Configuration de VLANs, routage inter-VLAN et mise en place de listes de contrôle d'accès (ACL) sur Cisco.</p>
-                    <br>
-                    <a href="chemin_vers_ta_doc_reseau.pdf" target="_blank" class="btn"><i class="fa-solid fa-eye"></i> Consulter</a>
-                </div>
+    <div class="grid-projets">
 
-                <div class="card">
-                    <i class="fa-solid fa-user-shield skill-icon"></i>
-                    <h3>Sécurité & Active Directory</h3>
-                    <p>Gestion des GPO, stratégies de mots de passe et sécurisation des accès distants (VPN).</p>
-                    <br>
-                    <a href="chemin_vers_ta_doc_ad.pdf" target="_blank" class="btn"><i class="fa-solid fa-eye"></i> Consulter</a>
+        <div class="card center-text project-card-large">
+            <i class="fa-solid fa-network-wired skill-icon project-color"></i>
+            <h3>Configurations & Labs Cisco</h3>
+            <p>Recueil de TP d'administration réseau : du switching de base au routage dynamique avancé.</p>
+            <br>
+            <details>
+                <summary class="btn">Accéder aux documents</summary>
+                <div class="doc-list">
+                    
+                    <h4 class="year-title"><i class="fa-solid fa-graduation-cap"></i> 1ère Année — Fondamentaux</h4>
+
+                    <div class="doc-item">
+                        <div class="doc-header">
+                            <div class="doc-title">1. Création de VLANs</div>
+                            <div class="doc-actions">
+                                <label for="doc1" class="btn-action btn-view"><i class="fa-solid fa-eye"></i> Voir</label>
+                                <a href="1_VLAN_ExoLab1.docx" download class="btn-action btn-download"><i class="fa-solid fa-download"></i> DL</a>
+                            </div>
+                        </div>
+                        <input type="checkbox" id="doc1" class="toggle-doc">
+                        <div class="doc-viewer-container"><iframe src="1_VLAN_ExoLab1.docx"></iframe></div>
+                    </div>
+
+                    <div class="doc-item">
+                        <div class="doc-header">
+                            <div class="doc-title">2. Configuration du Trunk</div>
+                            <div class="doc-actions">
+                                <label for="doc2" class="btn-action btn-view"><i class="fa-solid fa-eye"></i> Voir</label>
+                                <a href="4_VLAN_Trunk.docx" download class="btn-action btn-download"><i class="fa-solid fa-download"></i> DL</a>
+                            </div>
+                        </div>
+                        <input type="checkbox" id="doc2" class="toggle-doc">
+                        <div class="doc-viewer-container"><iframe src="4_VLAN_Trunk.docx"></iframe></div>
+                    </div>
+
+                    <div class="doc-item">
+                        <div class="doc-header">
+                            <div class="doc-title">3. Routage Statique</div>
+                            <div class="doc-actions">
+                                <label for="doc3" class="btn-action btn-view"><i class="fa-solid fa-eye"></i> Voir</label>
+                                <a href="docs/8_Routage_Statique.docx" download class="btn-action btn-download"><i class="fa-solid fa-download"></i> DL</a>
+                            </div>
+                        </div>
+                        <input type="checkbox" id="doc3" class="toggle-doc">
+                        <div class="doc-viewer-container"><iframe src="docs/8_Routage_Statique.docx"></iframe></div>
+                    </div>
+
+                    <div class="doc-item">
+                        <div class="doc-header">
+                            <div class="doc-title">4. Routes Statiques Flottantes</div>
+                            <div class="doc-actions">
+                                <label for="doc4" class="btn-action btn-view"><i class="fa-solid fa-eye"></i> Voir</label>
+                                <a href="docs/9_Routes_Flottantes.docx" download class="btn-action btn-download"><i class="fa-solid fa-download"></i> DL</a>
+                            </div>
+                        </div>
+                        <input type="checkbox" id="doc4" class="toggle-doc">
+                        <div class="doc-viewer-container"><iframe src="docs/9_Routes_Flottantes.docx"></iframe></div>
+                    </div>
+
+                    <div class="doc-item">
+                        <div class="doc-header">
+                            <div class="doc-title">5. Routage inter-VLAN (Stick)</div>
+                            <div class="doc-actions">
+                                <label for="doc5" class="btn-action btn-view"><i class="fa-solid fa-eye"></i> Voir</label>
+                                <a href="docs/2_Routage_inter_VLAN_Routeur.docx" download class="btn-action btn-download"><i class="fa-solid fa-download"></i> DL</a>
+                            </div>
+                        </div>
+                        <input type="checkbox" id="doc5" class="toggle-doc">
+                        <div class="doc-viewer-container"><iframe src="docs/2_Routage_inter_VLAN_Routeur.docx"></iframe></div>
+                    </div>
+
+                    <div class="doc-item">
+                        <div class="doc-header">
+                            <div class="doc-title">6. Routage inter-VLAN (Switch L3)</div>
+                            <div class="doc-actions">
+                                <label for="doc6" class="btn-action btn-view"><i class="fa-solid fa-eye"></i> Voir</label>
+                                <a href="docs/5_Routage_inter_VLAN_Switch_L3.docx" download class="btn-action btn-download"><i class="fa-solid fa-download"></i> DL</a>
+                            </div>
+                        </div>
+                        <input type="checkbox" id="doc6" class="toggle-doc">
+                        <div class="doc-viewer-container"><iframe src="docs/5_Routage_inter_VLAN_Switch_L3.docx"></iframe></div>
+                    </div>
+
+                    <div class="doc-item">
+                        <div class="doc-header">
+                            <div class="doc-title">7. Mémos Routage IP</div>
+                            <div class="doc-actions">
+                                <label for="doc7" class="btn-action btn-view"><i class="fa-solid fa-eye"></i> Voir</label>
+                                <a href="docs/3_Exercice_Routage_IP.docx" download class="btn-action btn-download"><i class="fa-solid fa-download"></i> DL</a>
+                            </div>
+                        </div>
+                        <input type="checkbox" id="doc7" class="toggle-doc">
+                        <div class="doc-viewer-container"><iframe src="docs/3_Exercice_Routage_IP.docx"></iframe></div>
+                    </div>
+
+
+                    <h4 class="year-title" style="margin-top: 40px;"><i class="fa-solid fa-medal"></i> 2ème Année — Expert</h4>
+
+                    <div class="doc-item">
+                        <div class="doc-header">
+                            <div class="doc-title">8. NAT (Static & Dynamic)</div>
+                            <div class="doc-actions">
+                                <label for="doc8" class="btn-action btn-view"><i class="fa-solid fa-eye"></i> Voir</label>
+                                <a href="docs/1_NAT.docx" download class="btn-action btn-download"><i class="fa-solid fa-download"></i> DL</a>
+                            </div>
+                        </div>
+                        <input type="checkbox" id="doc8" class="toggle-doc">
+                        <div class="doc-viewer-container"><iframe src="docs/1_NAT.docx"></iframe></div>
+                    </div>
+
+                    <div class="doc-item">
+                        <div class="doc-header">
+                            <div class="doc-title">9. Redirection de port</div>
+                            <div class="doc-actions">
+                                <label for="doc9" class="btn-action btn-view"><i class="fa-solid fa-eye"></i> Voir</label>
+                                <a href="docs/2_Redirection_de_port.docx" download class="btn-action btn-download"><i class="fa-solid fa-download"></i> DL</a>
+                            </div>
+                        </div>
+                        <input type="checkbox" id="doc9" class="toggle-doc">
+                        <div class="doc-viewer-container"><iframe src="docs/2_Redirection_de_port.docx"></iframe></div>
+                    </div>
+
+                    <div class="doc-item">
+                        <div class="doc-header">
+                            <div class="doc-title">10. VPN IPsec Site-à-Site</div>
+                            <div class="doc-actions">
+                                <label for="doc10" class="btn-action btn-view"><i class="fa-solid fa-eye"></i> Voir</label>
+                                <a href="docs/7_VPN_IPsec.docx" download class="btn-action btn-download"><i class="fa-solid fa-download"></i> DL</a>
+                            </div>
+                        </div>
+                        <input type="checkbox" id="doc10" class="toggle-doc">
+                        <div class="doc-viewer-container"><iframe src="docs/7_VPN_IPsec.docx"></iframe></div>
+                    </div>
+
+                    <div class="doc-item">
+                        <div class="doc-header">
+                            <div class="doc-title">11. Authentification RADIUS</div>
+                            <div class="doc-actions">
+                                <label for="doc11" class="btn-action btn-view"><i class="fa-solid fa-eye"></i> Voir</label>
+                                <a href="docs/9_Exolab_RADIUS.docx" download class="btn-action btn-download"><i class="fa-solid fa-download"></i> DL</a>
+                            </div>
+                        </div>
+                        <input type="checkbox" id="doc11" class="toggle-doc">
+                        <div class="doc-viewer-container"><iframe src="docs/9_Exolab_RADIUS.docx"></iframe></div>
+                    </div>
+
+                    <div class="doc-item">
+                        <div class="doc-header">
+                            <div class="doc-title">12. Spanning Tree (STP)</div>
+                            <div class="doc-actions">
+                                <label for="doc12" class="btn-action btn-view"><i class="fa-solid fa-eye"></i> Voir</label>
+                                <a href="docs/5_STP.docx" download class="btn-action btn-download"><i class="fa-solid fa-download"></i> DL</a>
+                            </div>
+                        </div>
+                        <input type="checkbox" id="doc12" class="toggle-doc">
+                        <div class="doc-viewer-container"><iframe src="docs/5_STP.docx"></iframe></div>
+                    </div>
+
+                    <div class="doc-item">
+                        <div class="doc-header">
+                            <div class="doc-title">13. Optimisation STP</div>
+                            <div class="doc-actions">
+                                <label for="doc13" class="btn-action btn-view"><i class="fa-solid fa-eye"></i> Voir</label>
+                                <a href="docs/6_Optimisation_STP.docx" download class="btn-action btn-download"><i class="fa-solid fa-download"></i> DL</a>
+                            </div>
+                        </div>
+                        <input type="checkbox" id="doc13" class="toggle-doc">
+                        <div class="doc-viewer-container"><iframe src="docs/6_Optimisation_STP.docx"></iframe></div>
+                    </div>
+
+                    <div class="doc-item">
+                        <div class="doc-header">
+                            <div class="doc-title">14. Haute Disponibilité HSRP</div>
+                            <div class="doc-actions">
+                                <label for="doc14" class="btn-action btn-view"><i class="fa-solid fa-eye"></i> Voir</label>
+                                <a href="docs/13_HSRP.docx" download class="btn-action btn-download"><i class="fa-solid fa-download"></i> DL</a>
+                            </div>
+                        </div>
+                        <input type="checkbox" id="doc14" class="toggle-doc">
+                        <div class="doc-viewer-container"><iframe src="docs/13_HSRP.docx"></iframe></div>
+                    </div>
+
+                    <div class="doc-item">
+                        <div class="doc-header">
+                            <div class="doc-title">15. Routage Dynamique RIPv2</div>
+                            <div class="doc-actions">
+                                <label for="doc15" class="btn-action btn-view"><i class="fa-solid fa-eye"></i> Voir</label>
+                                <a href="docs/10_RIP.docx" download class="btn-action btn-download"><i class="fa-solid fa-download"></i> DL</a>
+                            </div>
+                        </div>
+                        <input type="checkbox" id="doc15" class="toggle-doc">
+                        <div class="doc-viewer-container"><iframe src="docs/10_RIP.docx"></iframe></div>
+                    </div>
+
+                    <div class="doc-item">
+                        <div class="doc-header">
+                            <div class="doc-title">16. Routage Dynamique OSPF</div>
+                            <div class="doc-actions">
+                                <label for="doc16" class="btn-action btn-view"><i class="fa-solid fa-eye"></i> Voir</label>
+                                <a href="docs/11_OSPF.docx" download class="btn-action btn-download"><i class="fa-solid fa-download"></i> DL</a>
+                            </div>
+                        </div>
+                        <input type="checkbox" id="doc16" class="toggle-doc">
+                        <div class="doc-viewer-container"><iframe src="docs/11_OSPF.docx"></iframe></div>
+                    </div>
+
+                    <div class="doc-item">
+                        <div class="doc-header">
+                            <div class="doc-title">17. Sécurisation OSPF (MD5)</div>
+                            <div class="doc-actions">
+                                <label for="doc17" class="btn-action btn-view"><i class="fa-solid fa-eye"></i> Voir</label>
+                                <a href="docs/12_OSPF_Securisation.docx" download class="btn-action btn-download"><i class="fa-solid fa-download"></i> DL</a>
+                            </div>
+                        </div>
+                        <input type="checkbox" id="doc17" class="toggle-doc">
+                        <div class="doc-viewer-container"><iframe src="docs/12_OSPF_Securisation.docx"></iframe></div>
+                    </div>
+
                 </div>
-            </div>
-        </section>
+            </details>
+        </div>
+
+    </div>
+</section>
 
         <!-- ======== CV ======== -->
         <section id="cv">
