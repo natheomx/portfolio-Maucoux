@@ -473,17 +473,18 @@ details summary::-webkit-details-marker { display: none; }
     .skill-bar-wrap { width: 100%; }
     .skill-info { min-width: unset; }
 }
+/* Masque les cartes non sélectionnées */
 .grid-projets:has(details[open]) .card:not(:has(details[open])) {
     display: none;
 }
 
-/* La carte ouverte prend toute la largeur */
+/* Agrandit la carte ouverte sur toute la grille */
 .grid-projets:has(details[open]) .card:has(details[open]) {
     grid-column: 1 / -1;
     width: 100%;
 }
 
-/* Style pour la croix de fermeture */
+/* Style de la croix de fermeture (gérée par votre script) */
 .close-project-btn {
     position: absolute;
     top: 20px;
