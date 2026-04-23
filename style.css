@@ -569,3 +569,20 @@ details summary::-webkit-details-marker { display: none; }
 .toggle-doc:checked + .doc-viewer-container {
     display: block;
 }
+/* Force l'affichage en grand pour TOUS les lecteurs PDF */
+.doc-viewer-container iframe {
+    width: 100% !important;
+    height: 85vh !important; /* Utilise 85% de la hauteur de l'écran pour un affichage optimal */
+    min-height: 600px;
+    border: none;
+}
+
+/* On s'assure que le container prend toute la largeur disponible */
+.doc-viewer-container {
+    width: 100%;
+    display: none; /* Masqué par défaut */
+}
+
+.toggle-doc:checked + .doc-viewer-container {
+    display: block;
+}
