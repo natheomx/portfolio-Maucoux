@@ -502,3 +502,61 @@ details summary::-webkit-details-marker { display: none; }
     color: #003399;
     z-index: 100;
 }
+/* Container principal des blocs */
+.skills-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* Titre des blocs (Système / Dev) */
+.skills-group-title {
+    font-family: 'Syne', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #003399;
+}
+
+/* Grille de badges */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 15px;
+}
+
+/* Style de chaque petit carré (badge) */
+.skill-card {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.skill-card:hover {
+    border-color: #003399;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,51,153,0.1);
+}
+
+/* Taille des icônes dans les carrés */
+.skill-card i {
+    font-size: 2rem;
+    color: #003399;
+}
+
+.skill-card span {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #333;
+}
