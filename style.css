@@ -372,19 +372,6 @@ details summary::-webkit-details-marker { display: none; }
 .toggle-doc:checked ~ .doc-viewer-container { max-height: 1000px; border-top: 1px solid #cbd5e1; }
 .doc-viewer-container iframe { width: 100%; height: 900px; border: none; display: block; zoom: 0.95; }
 
-/* =========================================
-   9. TABLEAU E4/E5
-   ========================================= */
-.table-wrapper { overflow-x: auto; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.06); margin-top: 25px; }
-.synthese-table { width: 100%; border-collapse: collapse; background: var(--white); font-size: 0.92rem; }
-.synthese-table thead tr { background: linear-gradient(135deg, var(--dark-blue), var(--medium-blue)); color: var(--white); }
-.synthese-table th { padding: 14px 18px; text-align: left; font-weight: 600; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px; }
-.synthese-table td { padding: 12px 18px; border-bottom: 1px solid #f1f5f9; color: var(--text-grey); }
-.synthese-table tbody tr:hover { background: #f8fafc; }
-.synthese-table tbody tr:last-child td { border-bottom: none; }
-.epreuve-tag { display: inline-block; padding: 3px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: 700; }
-.epreuve-tag.e4 { background: #dcfce7; color: #15803d; border: 1px solid #86efac; }
-.epreuve-tag.e5 { background: #dbeafe; color: #1d4ed8; border: 1px solid #93c5fd; }
 
 /* =========================================
    10. VEILLE
@@ -559,4 +546,26 @@ details summary::-webkit-details-marker { display: none; }
     font-size: 0.95rem;
     font-weight: 600;
     color: #333;
+}
+/* Conteneur du lecteur PDF */
+.doc-viewer-container {
+    display: none; /* Caché par défaut */
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    background: #f9f9f9;
+}
+
+/* L'iframe (le PDF lui-même) */
+.doc-viewer-container iframe {
+    width: 100%;
+    height: 800px; /* Ajuste cette valeur selon tes préférences */
+    border: none;
+}
+
+/* Affiche le conteneur quand la checkbox est cochée */
+.toggle-doc:checked + .doc-viewer-container {
+    display: block;
 }
