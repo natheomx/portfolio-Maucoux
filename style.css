@@ -573,3 +573,26 @@ details summary::-webkit-details-marker { display: none; }
     border: none;
     border-radius: 8px;
 }
+/* Style du bouton "Voir le PDF" pour qu'il ressemble à ton image */
+.btn-tableau {
+    display: inline-block;
+    background-color: #1e40af; /* Le bleu de ton thème */
+    color: white !important; /* Texte blanc */
+    padding: 8px 20px;
+    margin-top: 10px;
+    border-radius: 6px; /* Bords légèrement arrondis */
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    text-decoration: none;
+}
+
+/* Effet au survol du bouton */
+.btn-tableau:hover {
+    background-color: #3b82f6; /* Bleu plus clair */
+    transform: translateY(-2px); /* Petit saut vers le haut */
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
