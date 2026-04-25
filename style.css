@@ -547,3 +547,29 @@ details summary::-webkit-details-marker { display: none; }
     font-weight: 600;
     color: #333;
 }
+/* Permet au container de s'extraire de la grille des carrés */
+.skill-card-container {
+    display: contents; 
+}
+
+/* Force la visionneuse à prendre toute la largeur de la section */
+.full-width-viewer {
+    grid-column: 1 / -1; /* Prend toutes les colonnes de la grille */
+    width: 100% !important;
+    margin-top: 20px;
+    display: none; /* Caché par défaut */
+}
+
+/* Affiche la visionneuse quand on clique sur le bouton */
+#view-e5-tableau:checked + .full-width-viewer {
+    display: block;
+}
+
+/* Définit la grande taille du PDF */
+.full-width-viewer iframe {
+    width: 100% !important;
+    height: 85vh !important; /* 85% de la hauteur de l'écran */
+    min-height: 600px;
+    border: none;
+    border-radius: 8px;
+}
